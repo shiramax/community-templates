@@ -40,6 +40,14 @@ template_inputs:
     is not specified, current user time zone is used. By default, the search is unlimited.
   advanced: false
   value_type: date
+- name: Hosts filter
+  required: false
+  input_type: user
+  description: Limit the report only on hosts found by this search query. Keep empty
+    for report on all available hosts.
+  advanced: false
+  value_type: search
+  resource_type: Host
 model: ReportTemplate
 require:
 - plugin: katello
